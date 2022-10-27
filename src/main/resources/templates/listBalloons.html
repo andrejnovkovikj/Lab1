@@ -1,0 +1,26 @@
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Balloon Order page - Welcome and choose a Balloon</title>
+    <style type="text/css">
+        body {
+            width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to our Balloon Shop App</h1>
+</header>
+<main>
+    <h2>Chosen balloons</h2>
+    <ul>
+        <li th:text="${ipAddress}"></li>
+        <li th:each="balloon : ${balloons}"> <th:block th:text="${balloon.name}"></th:block></li>
+    </ul>
+
+    <a href="">Submit</a>
+</main>
+</body>
+</html>
