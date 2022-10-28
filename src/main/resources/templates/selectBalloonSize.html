@@ -30,7 +30,6 @@
 <header>
     <h1>Balloon Order page - Select Balloon Size </h1>
     <h2>Selected balloon color:</h2>
-    <span th:text="${ipAddress}"> </span> <br>
 <!--    <span th:text="${lastElement}"> </span> <br>-->
     <span th:each="balloon : ${balloons}"> <th:block th:text="${balloon.name}"></th:block>  <th:block th:text="${balloon.description}"></th:block><br></span>
 </header>
